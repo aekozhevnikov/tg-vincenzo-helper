@@ -85,7 +85,7 @@
             }
 
             // Очищаем номер
-            const phone = text.replace(/[^0-9+]/g, '').replace(//\(8)|=(8)/g, '+7');
+            const phone = text.replace(/[^0-9+]/g, '').replace(/^8|^7/, '+7');
 
             if (!phone) {
                 alert('Не найден номер телефона в буфере.');
